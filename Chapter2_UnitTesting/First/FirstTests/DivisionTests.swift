@@ -28,7 +28,8 @@ final class DivisionTests: XCTestCase {
         let result = division.divisionRemainder(of: divided, dividedBy: divisor)
 
         // then
-        verifyDivision(result, expectedQuotient: 3, expectedRemainder: 2)
+        verifyDivision(result, expectedQuotient: 3, expectedRemainder: 1)
+        //verifyDivision(result, expectedQuotient: 3, expectedRemainder: 2) // Uncomment to test the failure fo this test
     }
 
     // The file and line parameters are default and will be set to the value at the place it is called
