@@ -22,6 +22,9 @@
 		528AC8CB2B17CF8D0010C433 /* ThrowingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528AC8CA2B17CF8D0010C433 /* ThrowingTests.swift */; };
 		528AC8CE2B181AA80010C433 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528AC8CD2B181AA80010C433 /* ViewControllerTests.swift */; };
 		528AC8D62B181E6A0010C433 /* AsynchronousTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528AC8D52B181E6A0010C433 /* AsynchronousTests.swift */; };
+		52D44EEB2B18821D00857C68 /* PrimeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D44EEA2B18821D00857C68 /* PrimeCalculator.swift */; };
+		52D44EED2B18823D00857C68 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D44EEC2B18823D00857C68 /* User.swift */; };
+		52D44EEF2B18878600857C68 /* NotificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D44EEE2B18878600857C68 /* NotificationTests.swift */; };
 		52DEBFA62B16F53F0061319B /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DEBFA52B16F53F0061319B /* Converter.swift */; };
 		52DEBFA82B16F5C00061319B /* ConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DEBFA72B16F5C00061319B /* ConverterTests.swift */; };
 		52DEBFAA2B1705D40061319B /* LifecycleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DEBFA92B1705D40061319B /* LifecycleTests.swift */; };
@@ -72,6 +75,9 @@
 		528AC8CD2B181AA80010C433 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		528AC8D32B181E6A0010C433 /* AsynchronousTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsynchronousTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		528AC8D52B181E6A0010C433 /* AsynchronousTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsynchronousTests.swift; sourceTree = "<group>"; };
+		52D44EEA2B18821D00857C68 /* PrimeCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeCalculator.swift; sourceTree = "<group>"; };
+		52D44EEC2B18823D00857C68 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		52D44EEE2B18878600857C68 /* NotificationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTests.swift; sourceTree = "<group>"; };
 		52DEBFA52B16F53F0061319B /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
 		52DEBFA72B16F5C00061319B /* ConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterTests.swift; sourceTree = "<group>"; };
 		52DEBFA92B1705D40061319B /* LifecycleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifecycleTests.swift; sourceTree = "<group>"; };
@@ -138,6 +144,7 @@
 				523EB49B2B1687280071D4A4 /* Hater.swift */,
 				52DEBFA52B16F53F0061319B /* Converter.swift */,
 				528AC8C62B17CAE10010C433 /* Division.swift */,
+				52D44EE92B1881EB00857C68 /* Asynchronous */,
 			);
 			path = First;
 			sourceTree = "<group>";
@@ -182,8 +189,18 @@
 			isa = PBXGroup;
 			children = (
 				528AC8D52B181E6A0010C433 /* AsynchronousTests.swift */,
+				52D44EEE2B18878600857C68 /* NotificationTests.swift */,
 			);
 			path = AsynchronousTests;
+			sourceTree = "<group>";
+		};
+		52D44EE92B1881EB00857C68 /* Asynchronous */ = {
+			isa = PBXGroup;
+			children = (
+				52D44EEA2B18821D00857C68 /* PrimeCalculator.swift */,
+				52D44EEC2B18823D00857C68 /* User.swift */,
+			);
+			path = Asynchronous;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,6 +367,8 @@
 				523EB4702B16870D0071D4A4 /* ViewController.swift in Sources */,
 				523EB46C2B16870D0071D4A4 /* AppDelegate.swift in Sources */,
 				528AC8C72B17CAE10010C433 /* Division.swift in Sources */,
+				52D44EEB2B18821D00857C68 /* PrimeCalculator.swift in Sources */,
+				52D44EED2B18823D00857C68 /* User.swift in Sources */,
 				523EB49C2B1687280071D4A4 /* Hater.swift in Sources */,
 				523EB46E2B16870D0071D4A4 /* SceneDelegate.swift in Sources */,
 				52DEBFA62B16F53F0061319B /* Converter.swift in Sources */,
@@ -382,6 +401,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52D44EEF2B18878600857C68 /* NotificationTests.swift in Sources */,
 				528AC8D62B181E6A0010C433 /* AsynchronousTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
