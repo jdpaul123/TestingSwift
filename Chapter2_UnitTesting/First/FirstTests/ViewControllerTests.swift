@@ -19,6 +19,8 @@ final class ViewControllerTests: XCTestCase {
      SetUp Tests for a View Controller:
      - Create a "var sut: ViewController" property on the test class
      - Call "sut.loadViewIfNeeded()"
+     NOTE: loadViewIfNeeded() loads all of the views from the Story Board attatched to the view controller. Views exist as needed (they are lazy) so
+     this method call forces them to load
 
      Tests to create for a view controller:
      - Manually call lifecycle methods like viewDidLoad() and viewDidAppear(false) to test something like hiding a button based on some state or checking the text of labels
