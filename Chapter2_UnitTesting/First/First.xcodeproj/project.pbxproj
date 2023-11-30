@@ -30,6 +30,8 @@
 		52DEBFA62B16F53F0061319B /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DEBFA52B16F53F0061319B /* Converter.swift */; };
 		52DEBFA82B16F5C00061319B /* ConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DEBFA72B16F5C00061319B /* ConverterTests.swift */; };
 		52DEBFAA2B1705D40061319B /* LifecycleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DEBFA92B1705D40061319B /* LifecycleTests.swift */; };
+		52F7C5B92B192ACA00A745DF /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F7C5B82B192ACA00A745DF /* House.swift */; };
+		52F7C5BB2B192B4700A745DF /* CodeCoverageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F7C5BA2B192B4700A745DF /* CodeCoverageTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,8 @@
 		52DEBFA52B16F53F0061319B /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
 		52DEBFA72B16F5C00061319B /* ConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterTests.swift; sourceTree = "<group>"; };
 		52DEBFA92B1705D40061319B /* LifecycleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifecycleTests.swift; sourceTree = "<group>"; };
+		52F7C5B82B192ACA00A745DF /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
+		52F7C5BA2B192B4700A745DF /* CodeCoverageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeCoverageTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +153,7 @@
 				52DEBFA52B16F53F0061319B /* Converter.swift */,
 				528AC8C62B17CAE10010C433 /* Division.swift */,
 				52DBBCEB2B1923ED0066D629 /* SynchronousPrimeCalculator.swift */,
+				52F7C5B82B192ACA00A745DF /* House.swift */,
 				52D44EE92B1881EB00857C68 /* Asynchronous */,
 			);
 			path = First;
@@ -164,6 +169,7 @@
 				528AC8CA2B17CF8D0010C433 /* ThrowingTests.swift */,
 				528AC8CD2B181AA80010C433 /* ViewControllerTests.swift */,
 				52DBBCED2B1925ED0066D629 /* PerformanceTesting.swift */,
+				52F7C5BA2B192B4700A745DF /* CodeCoverageTests.swift */,
 			);
 			path = FirstTests;
 			sourceTree = "<group>";
@@ -378,6 +384,7 @@
 				523EB49C2B1687280071D4A4 /* Hater.swift in Sources */,
 				52DBBCEC2B1923ED0066D629 /* SynchronousPrimeCalculator.swift in Sources */,
 				523EB46E2B16870D0071D4A4 /* SceneDelegate.swift in Sources */,
+				52F7C5B92B192ACA00A745DF /* House.swift in Sources */,
 				52DEBFA62B16F53F0061319B /* Converter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,6 +397,7 @@
 				52DEBFA82B16F5C00061319B /* ConverterTests.swift in Sources */,
 				528AC8CB2B17CF8D0010C433 /* ThrowingTests.swift in Sources */,
 				52DBBCEE2B1925ED0066D629 /* PerformanceTesting.swift in Sources */,
+				52F7C5BB2B192B4700A745DF /* CodeCoverageTests.swift in Sources */,
 				52DEBFAA2B1705D40061319B /* LifecycleTests.swift in Sources */,
 				528AC8C92B17CB520010C433 /* DivisionTests.swift in Sources */,
 				523EB4832B16870E0071D4A4 /* FirstTests.swift in Sources */,
