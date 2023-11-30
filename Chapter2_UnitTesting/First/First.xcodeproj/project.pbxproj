@@ -25,6 +25,8 @@
 		52D44EEB2B18821D00857C68 /* PrimeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D44EEA2B18821D00857C68 /* PrimeCalculator.swift */; };
 		52D44EED2B18823D00857C68 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D44EEC2B18823D00857C68 /* User.swift */; };
 		52D44EEF2B18878600857C68 /* NotificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D44EEE2B18878600857C68 /* NotificationTests.swift */; };
+		52DBBCEC2B1923ED0066D629 /* SynchronousPrimeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DBBCEB2B1923ED0066D629 /* SynchronousPrimeCalculator.swift */; };
+		52DBBCEE2B1925ED0066D629 /* PerformanceTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DBBCED2B1925ED0066D629 /* PerformanceTesting.swift */; };
 		52DEBFA62B16F53F0061319B /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DEBFA52B16F53F0061319B /* Converter.swift */; };
 		52DEBFA82B16F5C00061319B /* ConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DEBFA72B16F5C00061319B /* ConverterTests.swift */; };
 		52DEBFAA2B1705D40061319B /* LifecycleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DEBFA92B1705D40061319B /* LifecycleTests.swift */; };
@@ -78,6 +80,8 @@
 		52D44EEA2B18821D00857C68 /* PrimeCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeCalculator.swift; sourceTree = "<group>"; };
 		52D44EEC2B18823D00857C68 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		52D44EEE2B18878600857C68 /* NotificationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTests.swift; sourceTree = "<group>"; };
+		52DBBCEB2B1923ED0066D629 /* SynchronousPrimeCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchronousPrimeCalculator.swift; sourceTree = "<group>"; };
+		52DBBCED2B1925ED0066D629 /* PerformanceTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceTesting.swift; sourceTree = "<group>"; };
 		52DEBFA52B16F53F0061319B /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
 		52DEBFA72B16F5C00061319B /* ConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterTests.swift; sourceTree = "<group>"; };
 		52DEBFA92B1705D40061319B /* LifecycleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifecycleTests.swift; sourceTree = "<group>"; };
@@ -144,6 +148,7 @@
 				523EB49B2B1687280071D4A4 /* Hater.swift */,
 				52DEBFA52B16F53F0061319B /* Converter.swift */,
 				528AC8C62B17CAE10010C433 /* Division.swift */,
+				52DBBCEB2B1923ED0066D629 /* SynchronousPrimeCalculator.swift */,
 				52D44EE92B1881EB00857C68 /* Asynchronous */,
 			);
 			path = First;
@@ -158,6 +163,7 @@
 				528AC8C82B17CB520010C433 /* DivisionTests.swift */,
 				528AC8CA2B17CF8D0010C433 /* ThrowingTests.swift */,
 				528AC8CD2B181AA80010C433 /* ViewControllerTests.swift */,
+				52DBBCED2B1925ED0066D629 /* PerformanceTesting.swift */,
 			);
 			path = FirstTests;
 			sourceTree = "<group>";
@@ -370,6 +376,7 @@
 				52D44EEB2B18821D00857C68 /* PrimeCalculator.swift in Sources */,
 				52D44EED2B18823D00857C68 /* User.swift in Sources */,
 				523EB49C2B1687280071D4A4 /* Hater.swift in Sources */,
+				52DBBCEC2B1923ED0066D629 /* SynchronousPrimeCalculator.swift in Sources */,
 				523EB46E2B16870D0071D4A4 /* SceneDelegate.swift in Sources */,
 				52DEBFA62B16F53F0061319B /* Converter.swift in Sources */,
 			);
@@ -382,6 +389,7 @@
 				528AC8CE2B181AA80010C433 /* ViewControllerTests.swift in Sources */,
 				52DEBFA82B16F5C00061319B /* ConverterTests.swift in Sources */,
 				528AC8CB2B17CF8D0010C433 /* ThrowingTests.swift in Sources */,
+				52DBBCEE2B1925ED0066D629 /* PerformanceTesting.swift in Sources */,
 				52DEBFAA2B1705D40061319B /* LifecycleTests.swift in Sources */,
 				528AC8C92B17CB520010C433 /* DivisionTests.swift in Sources */,
 				523EB4832B16870E0071D4A4 /* FirstTests.swift in Sources */,

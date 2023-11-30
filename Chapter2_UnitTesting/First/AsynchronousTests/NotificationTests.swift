@@ -28,6 +28,8 @@ final class NotificationTests: XCTestCase {
                                                        notificationCenter: center)
 
 
+        // Returning false will mean that the expectation will NOT be fulfilled
+        // Returning true will mean that teh expectation will be fulfilled
         expectation.handler = { notification -> Bool in
             guard let level = notification.userInfo?["level"] as? String else {
                 return false
