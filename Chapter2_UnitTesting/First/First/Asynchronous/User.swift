@@ -12,10 +12,10 @@ struct User {
 
     // On linkedIn a user can upgrade to a paid acount.
     // To perform the upgrade a notification is sent out using upgrade().
-    func upgrade() {
+    // Using dependency injection to allow our tests to use it's own instance of NofiticationCenter to ensure that the notification is triggered by the upgrade() method
+    func upgrade(using center: NotificationCenter = NotificationCenter.default) {
         DispatchQueue.global().async {
             Thread.sleep(forTimeInterval: 1)
-            let center = NotificationCenter.default
             center.post(name: User.upgradedNotification, object: nil, userInfo: ["level": "gold"])
         }
     }
