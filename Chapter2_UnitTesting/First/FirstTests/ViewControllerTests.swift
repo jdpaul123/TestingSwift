@@ -27,6 +27,5 @@ final class ViewControllerTests: XCTestCase {
 
      Note: checking outlets it part of Smoke Testing
      Smoke Testing: tests that prove the most important functionality works as expected
-
      */
 }
