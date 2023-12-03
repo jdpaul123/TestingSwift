@@ -17,6 +17,10 @@
 		52B4BE112B1BECBE002AE4F8 /* MockExamplesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B4BE102B1BECBE002AE4F8 /* MockExamplesUITests.swift */; };
 		52B4BE132B1BECBE002AE4F8 /* MockExamplesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B4BE122B1BECBE002AE4F8 /* MockExamplesUITestsLaunchTests.swift */; };
 		52B4BE212B1BED07002AE4F8 /* HouseAndBuyer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B4BE202B1BED07002AE4F8 /* HouseAndBuyer.swift */; };
+		52B4BE232B1BF213002AE4F8 /* PowerMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B4BE222B1BF213002AE4F8 /* PowerMonitor.swift */; };
+		52B4BE252B1BF296002AE4F8 /* PowerMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B4BE242B1BF296002AE4F8 /* PowerMonitorTests.swift */; };
+		52B4BE292B1BF826002AE4F8 /* StoreAndUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B4BE282B1BF826002AE4F8 /* StoreAndUser.swift */; };
+		52B4BE2C2B1BFC90002AE4F8 /* StoreAndUserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B4BE2B2B1BFC90002AE4F8 /* StoreAndUserTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		52B4BE102B1BECBE002AE4F8 /* MockExamplesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockExamplesUITests.swift; sourceTree = "<group>"; };
 		52B4BE122B1BECBE002AE4F8 /* MockExamplesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockExamplesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		52B4BE202B1BED07002AE4F8 /* HouseAndBuyer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseAndBuyer.swift; sourceTree = "<group>"; };
+		52B4BE222B1BF213002AE4F8 /* PowerMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerMonitor.swift; sourceTree = "<group>"; };
+		52B4BE242B1BF296002AE4F8 /* PowerMonitorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerMonitorTests.swift; sourceTree = "<group>"; };
+		52B4BE282B1BF826002AE4F8 /* StoreAndUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreAndUser.swift; sourceTree = "<group>"; };
+		52B4BE2B2B1BFC90002AE4F8 /* StoreAndUserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreAndUserTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,8 @@
 			children = (
 				52B4BE1F2B1BECCF002AE4F8 /* App */,
 				52B4BE202B1BED07002AE4F8 /* HouseAndBuyer.swift */,
+				52B4BE2A2B1BF82C002AE4F8 /* MockingPreconditionsAndAssertions */,
+				52B4BE262B1BF29B002AE4F8 /* PartialMocks */,
 			);
 			path = MockExamples;
 			sourceTree = "<group>";
@@ -111,6 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				52B4BE062B1BECBE002AE4F8 /* HouseTests.swift */,
+				52B4BE272B1BF2AB002AE4F8 /* PartialMocks */,
+				52B4BE2D2B1BFC96002AE4F8 /* MockingPreconditionsAndAssertions */,
 			);
 			path = MockExamplesTests;
 			sourceTree = "<group>";
@@ -136,6 +148,38 @@
 				52B4BDFD2B1BECBE002AE4F8 /* Info.plist */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		52B4BE262B1BF29B002AE4F8 /* PartialMocks */ = {
+			isa = PBXGroup;
+			children = (
+				52B4BE222B1BF213002AE4F8 /* PowerMonitor.swift */,
+			);
+			path = PartialMocks;
+			sourceTree = "<group>";
+		};
+		52B4BE272B1BF2AB002AE4F8 /* PartialMocks */ = {
+			isa = PBXGroup;
+			children = (
+				52B4BE242B1BF296002AE4F8 /* PowerMonitorTests.swift */,
+			);
+			path = PartialMocks;
+			sourceTree = "<group>";
+		};
+		52B4BE2A2B1BF82C002AE4F8 /* MockingPreconditionsAndAssertions */ = {
+			isa = PBXGroup;
+			children = (
+				52B4BE282B1BF826002AE4F8 /* StoreAndUser.swift */,
+			);
+			path = MockingPreconditionsAndAssertions;
+			sourceTree = "<group>";
+		};
+		52B4BE2D2B1BFC96002AE4F8 /* MockingPreconditionsAndAssertions */ = {
+			isa = PBXGroup;
+			children = (
+				52B4BE2B2B1BFC90002AE4F8 /* StoreAndUserTests.swift */,
+			);
+			path = MockingPreconditionsAndAssertions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +315,8 @@
 			files = (
 				52B4BE212B1BED07002AE4F8 /* HouseAndBuyer.swift in Sources */,
 				52B4BDF42B1BECBD002AE4F8 /* ViewController.swift in Sources */,
+				52B4BE292B1BF826002AE4F8 /* StoreAndUser.swift in Sources */,
+				52B4BE232B1BF213002AE4F8 /* PowerMonitor.swift in Sources */,
 				52B4BDF02B1BECBD002AE4F8 /* AppDelegate.swift in Sources */,
 				52B4BDF22B1BECBD002AE4F8 /* SceneDelegate.swift in Sources */,
 			);
@@ -280,6 +326,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52B4BE2C2B1BFC90002AE4F8 /* StoreAndUserTests.swift in Sources */,
+				52B4BE252B1BF296002AE4F8 /* PowerMonitorTests.swift in Sources */,
 				52B4BE072B1BECBE002AE4F8 /* HouseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
