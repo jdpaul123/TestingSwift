@@ -14,7 +14,7 @@ final class XCUITestSandboxUITests: XCTestCase {
      in your app using this structure:
      #if DEBUG
      if CommandLine.arguments.contains("enable-testing") {
-         configureAppForTesting()
+        configureAppForTesting()
      }
      #endif
 
@@ -31,5 +31,61 @@ final class XCUITestSandboxUITests: XCTestCase {
         let app = XCUIApplication()
         app.launchArguments = ["enable-testing"] // testing flag
         app.launch()
+    }
+
+    func testLabelCopiesTextField() {
+        let app = XCUIApplication()
+        // app.textFields["CopyTextField"].tap() // You can use textFields.element.tap() if there is one text field or use the accessability identifier
+        app.textFields.element.tap()
+
+        app.keys["t"].tap()
+        app.keys["e"].tap()
+        app.keys["s"].tap()
+        app.keys["t"].tap()
+        app.keyboards.buttons["Return"].tap()
+
+        // test goes here
+        XCTAssertEqual(app.staticTexts["TextCopy"].label, "test") // "staticTexts" combines text fields and labels values
+    }
+
+    func testSliderControlsProgress() {
+        let app = XCUIApplication()
+        app.sliders["Completion"].adjust(toNormalizedSliderPosition: 1)
+
+        // find the progress view in progressIndicators. It is of type Any? so we must cast it to a string
+        guard let completion = app.progressIndicators.element.value as? String else {
+            XCTFail("Unable to find the progress indicator.")
+            return
+        }
+
+        XCTAssertEqual(completion, "0%")
+    }
+
+    func testButtonShowAlerts() {
+        let app = XCUIApplication()
+        app.buttons["Blue"].tap()
+        XCTAssertTrue(app.alerts["Blue"].exists)
+        XCTAssertTrue(app.alerts["Blue"].isHittable) // exists doesn't always mean it is showing so isHittable confirms it does
+        app.alerts["Blue"].buttons["OK"].tap()
+    }
+
+    func testSegmentedControlChangesTitle() {
+        let app = XCUIApplication()
+
+        // Get the navigation bar's title value
+        let navigationBar = app.navigationBars["bobTheBuilder"]
+        var title = navigationBar.staticTexts.element.label
+
+        XCTAssertTrue(navigationBar.exists)
+        XCTAssertTrue(app.segmentedControls.buttons["Alpha"].isSelected)
+        XCTAssertFalse(app.segmentedControls.buttons["Omega"].isSelected)
+        XCTAssertEqual(title, "Alpha")
+
+        app.segmentedControls.buttons["Omega"].tap()
+
+        XCTAssertTrue(app.segmentedControls.buttons["Omega"].isSelected)
+        XCTAssertFalse(app.segmentedControls.buttons["Alpha"].isSelected)
+        title = navigationBar.staticTexts.element.label
+        XCTAssertEqual(title, "Omega")
     }
 }
