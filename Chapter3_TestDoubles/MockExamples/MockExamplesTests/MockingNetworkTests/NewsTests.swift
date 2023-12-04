@@ -23,7 +23,6 @@ final class NewsTests: XCTestCase {
         }
 
         class URLSessionMock: URLSessionProtocol {
-            var dataTask: DataTaskMock?
             var lastURL: URL?
 
             func dataTask(with url: URL, completionHandler: @escaping DataTaskResult) -> URLSessionDataTask {
