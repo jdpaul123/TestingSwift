@@ -4,6 +4,7 @@
 //
 //  Created by Jonathan Paul on 12/3/23.
 //
+
 // NOTE: No need to write any URLSession mock using this method. We configure our URLProtocolMock class with whatever test data we expect
 // to receive back, then ask URLSession to use that class as part of its networking
 
@@ -37,12 +38,12 @@ class URLProtocolMock: URLProtocol {
     override func stopLoading() { }
 }
 
-final class NewsTestsAlternativeMethod: XCTestCase {
+final class NewsAlternativeTests: XCTestCase {
     func testNewsStoriesAreFetched() {
         // given
         let url = URL(string: "https://www.apple.com/newsroom/rssfeed/rss")!
         let news = AlternativeNews(url: url)
-        let expectation = XCTestExpectation(description: "Downloading news stories triggers resume().")
+        let expectation = XCTestExpectation(description: "Downloading news stories returns \"Hello, world!\" as data.")
         URLProtocolMock.testURLs = [url: Data("Hello, world!".utf8)]
 
         // No cacheing using ephemeral
