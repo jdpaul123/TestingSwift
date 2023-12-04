@@ -51,7 +51,10 @@ protocol URLSessionProtocol {
     typealias DataTaskResult = @Sendable (Data?, URLResponse?, Error?) -> Void
     func dataTask(with url: URL, completionHandler: @escaping DataTaskResult) -> URLSessionDataTaskProtocol
 }
-protocol URLSessionDataTaskProtocol { func resume() }
+
+protocol URLSessionDataTaskProtocol {
+    func resume()
+}
 
 // Conform to protocol
 extension URLSession: URLSessionProtocol {
