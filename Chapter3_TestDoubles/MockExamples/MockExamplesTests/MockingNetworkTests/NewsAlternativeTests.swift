@@ -42,7 +42,7 @@ final class NewsAlternativeTests: XCTestCase {
     func testNewsStoriesAreFetched() {
         // given
         let url = URL(string: "https://www.apple.com/newsroom/rssfeed/rss")!
-        let news = AlternativeNews(url: url)
+        let news = NewsAlternative(url: url)
         let expectation = XCTestExpectation(description: "Downloading news stories returns \"Hello, world!\" as data.")
         URLProtocolMock.testURLs = [url: Data("Hello, world!".utf8)]
 
@@ -59,5 +59,14 @@ final class NewsAlternativeTests: XCTestCase {
 
         // then
         wait(for: [expectation], timeout: 1)
+    }
+
+    // TODO: It seems that testNewsFetchLoadsCorrectURL() and testNewsFetchCallsResume() are both impossible using just the URLProtocolMock rather than URLSessionMock with DataTaskMock
+    func testNewsFetchLoadsCorrectURL() {
+        // Must somehow check that the session instance holds the correct url
+    }
+
+    func testNewsFetchCallsResume() {
+        // Must somehow check tha the DataTask object hit the resume() method
     }
 }

@@ -25,7 +25,6 @@ final class NewsTests: XCTestCase {
         class URLSessionMock: URLSessionProtocol {
             var dataTask: DataTaskMock?
             var lastURL: URL?
-            var testData: Data?
 
             func dataTask(with url: URL, completionHandler: @escaping DataTaskResult) -> URLSessionDataTask {
                 defer { completionHandler(nil, nil, nil)}
@@ -103,11 +102,10 @@ final class NewsTests: XCTestCase {
 
         class URLSessionMock: URLSessionProtocol {
             var testData: Data?
-            var error: Error?
 
             func dataTask(with url: URL, completionHandler: @escaping DataTaskResult) -> URLSessionDataTask {
                 defer {
-                    completionHandler(testData, nil, error)
+                    completionHandler(testData, nil, nil)
                 }
                 // TODO: The public init was deprecated for iOS 13.0 and newer. There is no accessable init
                 return DataTaskMock()
@@ -134,12 +132,11 @@ final class NewsTests: XCTestCase {
         }
 
         class URLSessionMock: URLSessionProtocol {
-            var testData: Data?
             var error: Error?
 
             func dataTask(with url: URL, completionHandler: @escaping DataTaskResult) -> URLSessionDataTask {
                 defer {
-                    completionHandler(testData, nil, error)
+                    completionHandler(nil, nil, error)
                 }
                 // TODO: The public init was deprecated for iOS 13.0 and newer. There is no accessable init
                 return DataTaskMock()
@@ -158,7 +155,7 @@ final class NewsTests: XCTestCase {
 
         // When
         news.fetch(using: session) {
-            XCTAssertEqual(session.error as? NewsError, NewsError.newsError)
+            XCTAssertEqual(news.error as? NewsError, NewsError.newsError)
             expectation.fulfill()
         }
     }

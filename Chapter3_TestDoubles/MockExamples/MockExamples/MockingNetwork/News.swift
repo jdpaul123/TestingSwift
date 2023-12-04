@@ -17,6 +17,7 @@ import Foundation
 class News {
     var url: URL
     var stories = ""
+    var error: Error?
 
     init(url: URL) {
         self.url = url
@@ -26,7 +27,9 @@ class News {
     // Make that session of type URLSessionProtocol rather than URLSession
     func fetch(using session: URLSessionProtocol = URLSession.shared, completionHandler: @escaping () -> Void) {
         let task = session.dataTask(with: url) { data, response, error in
-            if let data = data {
+            if let error = error {
+                self.error = error
+            } else if let data = data {
                 self.stories = String(decoding: data, as: UTF8.self)
             }
 

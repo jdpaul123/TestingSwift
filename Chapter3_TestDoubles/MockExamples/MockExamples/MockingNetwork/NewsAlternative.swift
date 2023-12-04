@@ -14,7 +14,7 @@ import Foundation
  3. Did the request come back with certain data?
  4. Did the request come back with a specific error?
  */
-class AlternativeNews {
+class NewsAlternative {
     var url: URL
     var stories = ""
 
