@@ -16,6 +16,7 @@
 		527DD8BF2B3CCAC10098D7CC /* TDDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527DD8BE2B3CCAC10098D7CC /* TDDTests.swift */; };
 		527DD8C92B3CCAC10098D7CC /* TDDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527DD8C82B3CCAC10098D7CC /* TDDUITests.swift */; };
 		527DD8CB2B3CCAC10098D7CC /* TDDUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527DD8CA2B3CCAC10098D7CC /* TDDUITestsLaunchTests.swift */; };
+		527DD8D82B3CCC4E0098D7CC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527DD8D72B3CCC4E0098D7CC /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		527DD8C42B3CCAC10098D7CC /* TDDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		527DD8C82B3CCAC10098D7CC /* TDDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDUITests.swift; sourceTree = "<group>"; };
 		527DD8CA2B3CCAC10098D7CC /* TDDUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		527DD8D72B3CCC4E0098D7CC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				527DD8A72B3CCABF0098D7CC /* AppDelegate.swift */,
 				527DD8A92B3CCABF0098D7CC /* SceneDelegate.swift */,
 				527DD8AB2B3CCABF0098D7CC /* ViewController.swift */,
+				527DD8D72B3CCC4E0098D7CC /* User.swift */,
 				527DD8AD2B3CCABF0098D7CC /* Main.storyboard */,
 				527DD8B02B3CCAC10098D7CC /* Assets.xcassets */,
 				527DD8B22B3CCAC10098D7CC /* LaunchScreen.storyboard */,
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				527DD8D82B3CCC4E0098D7CC /* User.swift in Sources */,
 				527DD8AC2B3CCABF0098D7CC /* ViewController.swift in Sources */,
 				527DD8A82B3CCABF0098D7CC /* AppDelegate.swift in Sources */,
 				527DD8AA2B3CCABF0098D7CC /* SceneDelegate.swift in Sources */,
