@@ -88,4 +88,18 @@ final class XCUITestSandboxUITests: XCTestCase {
         title = navigationBar.staticTexts.element.label
         XCTAssertEqual(title, "Omega")
     }
+
+//    func testThatFails() {
+//        let app = XCUIApplication()
+//        app.textFields.element.tap()
+//        app.textFields.firstMatch.typeText("test")
+//        app.keyboards.buttons["Return"].tap()
+//
+//        app.sliders["50%"].swipeRight()
+//        app.segmentedControls.buttons["Omega"].tap()
+//        app.buttons["Blue"].tap()
+//        app.alerts["Blue"].buttons["OK"].tap()
+//
+//        XCTAssertTrue(app.alerts["Blue"].exists)
+//    }
 }
