@@ -9,10 +9,10 @@ import UIKit
 
 class ViewController: UITableViewController {
     var pictures = [String]()
+    var pictureSelectAction: ((String) -> Void)?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         let fm = FileManager.default
         let path = Bundle.main.resourcePath!
         let items = try! fm.contentsOfDirectory(atPath: path)
@@ -43,9 +43,7 @@ class ViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = DetailViewController()
-        vc.selectedImage = pictures[indexPath.row]
-        navigationController?.pushViewController(vc, animated: true)
+        pictureSelectAction?(pictures[indexPath.row])
     }
 }
 
